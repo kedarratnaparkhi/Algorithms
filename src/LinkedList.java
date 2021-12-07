@@ -2,9 +2,9 @@
 public class LinkedList {
 
     public static void main(String[] args) {
-        Node head = new Node();
-        Node middle = new Node();
-        Node last = new Node();
+        LinkedListNode head = new LinkedListNode();
+        LinkedListNode middle = new LinkedListNode();
+        LinkedListNode last = new LinkedListNode();
 
         head.data = 10;
         head.next = middle;
@@ -15,7 +15,7 @@ public class LinkedList {
         last.data = 30;
         last.next = null;
 
-        Node temp = head;
+        LinkedListNode temp = head;
         while(temp != null){
             System.out.println(temp.data+"\n");
             temp = temp.next;
@@ -23,7 +23,7 @@ public class LinkedList {
     }
 }
 
-class Node{
+class LinkedListNode{
     int data;
-    Node next;
+    LinkedListNode next;
 }
